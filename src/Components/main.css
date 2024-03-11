@@ -177,12 +177,13 @@ button {
     height: 426px;
     border: 2px solid #A35709;
     border-radius: 10px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Adjusted to have 3 columns */
+    gap: 20px; /* This will ensure a 20px gap between the cards */
 }
+
 
 .icon {
     display: flex;
@@ -212,8 +213,4 @@ button {
     }
 }
 
-.card-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
